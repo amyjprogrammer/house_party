@@ -3,6 +3,8 @@ __pycache__/
 *.sqlite3
 .env
 
+credentials.py
+
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json

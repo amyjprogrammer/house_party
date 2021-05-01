@@ -5,9 +5,6 @@ from .credentials import CLIENT_ID, CLIENT_SECRET
 from requests import post, put, get
 
 
-BASE_URL = "https://api.spotify.com/v1/me/"
-
-
 def get_user_tokens(session_id):
     user_tokens = SpotifyToken.objects.filter(user=session_id)
     print(user_tokens)
@@ -63,3 +60,4 @@ def refresh_spotify_token(session_id):
 
     update_or_create_user_tokens(
         session_id, access_token, token_type, expires_in, refresh_token)
+
