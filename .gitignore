@@ -2,6 +2,9 @@ virtual/
 __pycache__/
 *.sqlite3
 .env
+.node_modules
+.node 
+**/node_modules
 
 credentials.py
 
